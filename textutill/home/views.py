@@ -15,7 +15,7 @@ def removepunc(request):
         #analyze = djtext.upper()
     #    print(djtext)
         # params={'removetext':analyze}
-        # print("chut")https://api.github.com/repos/RitikKumar121/blog/languages
+        # https://api.github.com/repos/RitikKumar121/blog/languages
         respons1 = requests.get(
             'https://api.github.com/users/'+djtext).json()  # user name ko link ke sath jorne ke liye ayese kiye hai
         respons = requests.get(
@@ -37,5 +37,5 @@ def removepunc(request):
         else:
             return HttpResponse("User Not Found ")
     else:
-        #    print("hh")
+        #    
         return HttpResponse("Something Wrong")
